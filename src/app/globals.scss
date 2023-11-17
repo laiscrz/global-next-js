@@ -4,6 +4,9 @@ $blue:#183E9F;
 $white: white;
 $dark: #1e1c2a;
 
+
+
+// Cabecalho
 *{
     padding: 0;
     margin: 0;
@@ -47,9 +50,25 @@ $dark: #1e1c2a;
     color: $orange;
 }
 
+.navigation ul li .login-entrar{
+    display: flex;
+    background: $blue;
+    color: $white;
+    padding: 15px;
+    border-radius: 30px;
+    gap: 7px;
+}
+
+.navigation ul li .login-entrar:hover{
+    background-color: $orange;
+    color: $white;
+}
+
+
 .menu{
     cursor: pointer;
     display: none;
+    justify-content: center;
 }
 
 .menu .bar{
@@ -66,6 +85,44 @@ $dark: #1e1c2a;
 .menu .bar:nth-child(3){
     background: $blue;
 }
+
+// Rodape
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    box-shadow: 0 0.1rem 0.10rem #ffb388;
+    width: 100%;
+    background: $orange;
+    gap: 5rem;
+    color: $white;
+    font-size: 1.1em;
+    font-weight: 500;
+    
+}
+
+.rodape .repositorio-github p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.rodape .repositorio-github p a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 5px;
+}
+
+
+.rodape .repositorio-github p span {
+    font-size: 30px; 
+}
+
+
 
 @media(max-width: 785px){
     .navigation{

@@ -1,8 +1,8 @@
 
 export default function Solucao(){
     return(
-        <main>
-            
+        <main className="solucao">
+            <h2>Solução</h2>
         </main>
     )
 }
