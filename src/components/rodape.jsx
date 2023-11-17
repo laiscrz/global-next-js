@@ -13,11 +13,11 @@ export default function Rodape(){
             </div>
             <div className="integrantes">
                 <h3>Integrantes:</h3>
-                <p>Gustavo Marques Catelan- RM551823 -  Cargo : Desenvolvedor Backend em Python</p>
-                <p>Lais Alves da Silva Cruz - RM552258 - Cargo : Desenvolvedora FrontEnd</p>
-                <p>Lucas dos Santos Lopes - RM550790 - Cargo : Desenvolvedor Backend em Java</p>
-                <p>Murilo Machado - RM550718 - Cargo : Desenvolvedor de Banco de Dados</p>
-                <p>Victor Taborda Rodrigues - RM97900 -  Cargo : AI and ChatBot </p>
+                <p>Gustavo Marques Catelan- RM551823 -  Turma: 1TDSPI -  Cargo : Desenvolvedor Backend em Python</p>
+                <p>Lais Alves da Silva Cruz - RM552258 -  Turma: 1TDSPI - Cargo : Desenvolvedora FrontEnd</p>
+                <p>Lucas dos Santos Lopes - RM550790 -  Turma: 1TDSPI - Cargo : Desenvolvedor Backend em Java</p>
+                <p>Murilo Machado - RM550718 -  Turma: 1TDSPI - Cargo : Desenvolvedor de Banco de Dados</p>
+                <p>Victor Taborda Rodrigues - RM97900-  Turma: 1TDSPI -  Cargo : AI and ChatBot </p>
             </div>
            
         </footer>
