@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+
+
 $orange: #FF5C00;
 $blue:#183E9F;
 $white: white;
 $dark: #1e1c2a;
-
+$font-poppins:'Poppins', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
 
 .home{
     width: 100%;
@@ -27,10 +31,12 @@ $dark: #1e1c2a;
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 4rem;
+    font-family: $font-poppins;
 }
 
 .home-text p{
     margin-bottom: 4rem;
+    font-family: $font-montserrat;
 }
 
 .btn-conheca{

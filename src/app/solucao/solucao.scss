@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+
+$orange: #FF5C00;
+$orange-light: #EC8F5E;
+$blue:#183E9F;
+$white: white;
+$dark: #1e1c2a;
+$font-poppins:'Poppins', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+.solucao{
+    margin-top: 3rem;
+}
+
+.solucao-container{
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+.solucao-img{
+    width: 40%;
+    justify-self: center;
+}
+
+.solucao-text > p{
+    font-size: 1.2em;
+    font-family: $font-montserrat;
+}
+
+.solucao-title{
+    margin-bottom: 8px;
+    color: $orange;
+    font-size: 3rem;
+    font-family: $font-poppins;
+}
+
+.solucao-descricao{
+    margin-bottom: 5px;
+}
+
+.solucao-detalhes{
+    display: grid;
+    row-gap: 0.8rem;
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+}
+
+.solucao-detalhes > p{
+    font-family: $font-montserrat;
+}
+
+.solucao-descricao{
+    display: inline-flex;
+    column-gap: .5rem;
+
+}
+
+.solucao-icons{
+    font-size: 1rem;
+    margin-top: .15rem;
+}
