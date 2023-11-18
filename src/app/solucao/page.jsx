@@ -2,9 +2,49 @@
 import '/src/app/solucao/solucao.scss'
 import { BiCheck } from "react-icons/bi";
 import { CiMedicalCross } from "react-icons/ci";
+import { IoIosSearch,IoIosAlert } from "react-icons/io";
+import { MdOutlineSecurity } from "react-icons/md";
+import { BsClipboard2HeartFill } from "react-icons/bs";
+import { HiMiniClock } from "react-icons/hi2";
 
 
 export default function Solucao() {
+
+    
+const categoriasConteudo = [
+    {
+      icon: <IoIosSearch />,
+      title: 'Monitoramento Avançado',
+      description: 'Monitora os sinais vitais, oferecendo uma visão abrangente da saúde do usuário.',
+    },
+    {
+      icon: <MdOutlineSecurity />,
+      title: 'Segurança com Geolocalização',
+      description: 'Garantindo a segurança dos idosos, permitindo rastrear sua localização em situações de emergência.',
+    },
+    {
+      icon: <HiMiniClock />,
+      title: 'Design Ergonômico',
+      description: 'Pensado para atender às preferências estéticas e ergonômicas do público idoso, tornando o LifeCare confortável para uso diário.',
+    },
+    {
+      icon: <BsClipboard2HeartFill />,
+      title: 'Cuidado Imediato',
+      description: 'Oferecendo cuidado imediato ao identificar precocemente problemas de saúde, proporcionando tranquilidade aos usuários e seus familiares.',
+    },
+    {
+      icon: <CiMedicalCross />,
+      title: 'Inovação na Saúde',
+      description: 'É uma inovação no campo da saúde, integrando tecnologia e cuidados personalizados para atender às necessidades específicas dos idosos.',
+    },
+    {
+      icon: <IoIosAlert />,
+      title: 'Alertas Personalizados',
+      description: 'Com base nos dados de monitoramento, garantindo que os usuários estejam cientes de quaisquer mudanças significativas.',
+    },
+  ]
+
+
     return (
         <main>
             <section className="solucao">
@@ -43,50 +83,27 @@ export default function Solucao() {
                             Pensado na Saúde de Pessoas Idosas !
                         </h3>
                         <p>
-                        O LifeCare é mais do que um relógio inteligente; é um companheiro dedicado ao bem-estar dos idosos. Desenvolvido para monitoramento contínuo de sinais vitais, geolocalização em emergências e design ergonômico, o LifeCare oferece tranquilidade e cuidado imediato.
+                            O LifeCare é mais do que um relógio inteligente; é um companheiro dedicado ao bem-estar dos idosos. Desenvolvido para monitoramento contínuo de sinais vitais, geolocalização em emergências e design ergonômico, o LifeCare oferece tranquilidade e cuidado imediato.
                         </p>
                         <div className='img-container'>
                             <img src="/image/saiba_img.jpg" alt="Cliente(idoso) usando LifeCare" className='saiba-img' />
                             <img src="/image/saiba_imgdois.png" alt="Cliente(idoso) usando LifeCare" className='saiba-img' />
-                            <img src="/image/saiba_imgtres.jpg" alt="Cliente(idoso) usando LifeCare" className='saiba-img'/>
+                            <img src="/image/saiba_imgtres.jpg" alt="Cliente(idoso) usando LifeCare" className='saiba-img' />
                         </div>
 
                     </div>
                     <div className='saiba-categorias'>
-                        <article className='categorias-card'>
-                            <span className='categorias-icon'><CiMedicalCross /></span>
-                            <h4>Monitoramento Avançado</h4>
-                            <p>Monitora os sinais vitais, oferecendo uma visão abrangente da saúde do usuário.</p>
-                        </article>
-                        <article className='categorias-card'>
-                            <span className='categorias-icon'><CiMedicalCross /></span>
-                            <h4>Segurança com Geolocalização</h4>
-                            <p> Grantindo a segurança dos idosos, permitindo rastrear sua localização em situações de emergência.</p>
-                        </article>
-                        <article className='categorias-card'>
-                            <span className='categorias-icon'><CiMedicalCross /></span>
-                            <h4>Design Ergonômico</h4>
-                            <p>Pensado para atender às preferências estéticas e ergonômicas do público idoso, tornando o LifeCare confortável para uso diário.</p>
-                        </article>
-                        <article className='categorias-card'>
-                            <span className='categorias-icon'><CiMedicalCross /></span>
-                            <h4>Cuidado Imediato</h4>
-                            <p>Oferecendo cuidado imediato ao identificar precocemente problemas de saúde, proporcionando tranquilidade aos usuários e seus familiares.</p>
-                        </article>
-                        <article className='categorias-card'>
-                            <span className='categorias-icon'><CiMedicalCross /></span>
-                            <h4>Inovação na Saúde</h4>
-                            <p>É uma inovação no campo da saúde, integrando tecnologia e cuidados personalizados para atender às necessidades específicas dos idosos</p>
-                        </article>
-                        <article className='categorias-card'>
-                            <span className='categorias-icon'><CiMedicalCross /></span>
-                            <h4>Alertas Personalizados</h4>
-                            <p>Com base nos dados de monitoramento, garantindo que os usuários estejam cientes de quaisquer mudanças significativas.</p>
-                        </article>
+                        {
+                        categoriasConteudo.map((categoria,id) => (
+                            <article key={id} className='categorias-card'>
+                                <span className='categorias-icon'>{categoria.icon}</span>
+                                <h4>{categoria.title}</h4>
+                                <p>{categoria.description}</p>
+                            </article>
+                        ))}
+
                     </div>
-
-                </div>
-
+                 </div>
             </section>
         </main>
     )
