@@ -76,11 +76,11 @@ $font-montserrat: 'Montserrat', sans-serif;
 }
 
 .missoes-valores{
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .missoes-valores-container{
-    background: $orange;
+    background: $orange-light;
     padding: 3rem 2rem 2rem;
     border-radius: 1rem;
 }
@@ -106,7 +106,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 .number-valores-missoes-card{
     display: inline-block;
-    background: $orange;
+    background: $orange-light;
     color: $white;
     padding: .5rem .75rem;
     border-radius: .25rem;
