@@ -20,7 +20,7 @@ export default function Login() {
                         </div>
                         <div className="login-input">
                             <label htmlFor="senha">Senha</label>
-                            <input type="password" name="senha" placeholder="senha" />
+                            <input type="password" name="senha" placeholder="Senha" />
                         </div>
                         <button className="btn-login">Entrar</button>
                         <p className='cadastre-se'>Não tem conta? <Link href={'/cadastro'}>Cadastre-se</Link></p>

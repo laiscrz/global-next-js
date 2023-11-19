@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+
+
+$orange: #FF5C00;
+$orange-light: #EC8F5E;
+$blue:#183E9F;
+$white: white;
+$white-light: #dedede;
+$caixa-login: #ffa570;
+$dark: #1e1c2a;
+$font-poppins:'Poppins', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+
+.main-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro{
+    width: 1024px;
+    padding: 5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cadastro-img {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+
+}
+
+.cadastro-img img{
+    width: 100%;
+}
+
+.cadastro-box{
+    font-family: $font-montserrat;
+    padding: 30px 40px;
+    width: 80%;
+    border-radius: 0 20px 20px 0;
+    background-color: $orange;
+    
+}
+
+.cadastro-box h2{
+    font-family: $font-poppins;
+    font-size: 30px;
+    color: $white;
+    
+}
+
+.cadastro-box p{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $white;
+    margin-bottom: 2rem;
+}
+
+.cadastro-box p a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $white-light;
+    text-decoration: none;
+}
+
+
+
+form .input-group{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+form .cadastro-input{
+    margin-bottom: 15px;
+}
+
+form .cadastro-input label{
+    color: $white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-family: $font-montserrat;
+}
+
+form .cadastro-input input,select{
+    width: 250px;
+    height: 50px;
+    background: $white;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: $orange;
+    transition: all 0.4s ease;
+}
+
+
+
+form .cadastro-input input:focus{
+    border: $orange;
+}
+
+form .cadastro-input .p-dispositivo{
+    margin-bottom: 0;
+    font-weight: none;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 3px;
+}
+
+form .cadastro-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form .cadastro-btn button{
+    
+    width: 70%;
+
+    height: 47px;
+    background-color: $white;
+    color: $orange;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
