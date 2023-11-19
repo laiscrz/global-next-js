@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+
+
+$orange: #FF5C00;
+$orange-light: #EC8F5E;
+$blue:#183E9F;
+$white: white;
+$white-light: #dedede;
+$caixa-login: #ffa570;
+$dark: #1e1c2a;
+$opcao-fundo: rgba(164, 164, 164, 0.245);
+$font-poppins:'Poppins', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+.p-cliente-inicial{
+    padding: 2rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.p-cliente-inicial .portal-img img{
+    width: 20rem;
+    border-radius: 20%;
+}
+
+.p-cliente-inicial .portal-text > h2{
+    font-family: $font-poppins;
+    color: $orange;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    font-family: $font-poppins;
+
+}
+
+.p-cliente-inicial .portal-text > p{
+    margin-bottom: 4rem;
+    font-family: $font-montserrat;
+    text-align: center;
+}
+
+.opn-cliente > h2{
+    padding: 5rem 0 0 0;
+    text-align: center;
+    font-family: $font-poppins;
+    color: $orange;
+    text-transform: uppercase;
+}
+
+
+.opn-cliente .opcoes{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 2fr));
+    margin-top: 36px;
+    gap: 24px;
+}
+
+.opn-cliente .opcoes li{
+    padding: 24px;
+    background: $opcao-fundo;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+   
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    }
+}
+
+.opn-cliente .opcoes li .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $orange;
+    color: $white-light;
+}
+
+
+.opn-cliente .opcoes li .informacoes h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.opn-cliente .opcoes li .informacoes p{
+    font-family: monospace;
+    margin-top: 5px;
+    font-size: 1.1em;
+
+}
+
