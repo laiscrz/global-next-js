@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import '/src/app/login/login.scss'
 
 
@@ -22,6 +23,7 @@ export default function Login() {
                             <input type="password" name="senha" placeholder="senha" />
                         </div>
                         <button className="btn-login">Entrar</button>
+                        <p className='cadastre-se'>Não tem conta? <Link href={'/cadastro'}>Cadastre-se</Link></p>
                     </div>
                 </div>
 
