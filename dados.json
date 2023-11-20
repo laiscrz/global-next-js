@@ -1,6 +1,17 @@
 {
   "cliente": [
     {
+      "idCliente": "ADMIN",
+      "nome": "Admin",
+      "genero": "outros",
+      "endereco": "Av Admin",
+      "cpf": "123456789",
+      "email": "admin@gmail.com",
+      "senha": "12345",
+      "idDispositivo": "ADM01",
+      "id": 1
+    },
+    {
       "idCliente": "P2RO5",
       "nome": "Joao",
       "genero": "feminino",
@@ -9,10 +20,19 @@
       "email": "joao@gmail.com",
       "senha": "joao123",
       "idDispositivo": "XGY48",
+      "id": 2
+    }
+  ],
+  "dispositivo": [
+    {
+      "idDispositivo": "XGY48",
+      "versao": "1.0.5",
+      "status": "Ativo",
+      "cor": "Branco",
+      "dataFabricacao": "12/04/2008",
       "id": 1
     }
   ],
-  "dispositivo": [],
   "manutencao": [],
   "diagnostico": [],
   "cuidador": [],

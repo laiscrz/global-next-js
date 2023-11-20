@@ -46,7 +46,7 @@ export default function PortalCliente() {
       titulo: 'Visualizar Dispositivos',
       descricao: 'Veja todos os dispositivos LifeCare registrados.',
       icone: <RxMagnifyingGlass />,
-      rota: '/portalcliente/dispositvo/visualizar',
+      rota: '/portalcliente/dispositivo',
     },
     {
       titulo: 'Informações do Cuidador',
@@ -64,7 +64,7 @@ export default function PortalCliente() {
       titulo: 'Configurações de Conta',
       descricao: 'Atualize suas informações de conta e preferências.',
       icone: <FaUserGear />,
-      rota: '/portalcliente/cliente/meudados',
+      rota: '/portalcliente/cliente/visualizar',
     },
     {
       titulo: 'Visualizar Serviços de Manutenção',
