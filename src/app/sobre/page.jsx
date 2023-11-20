@@ -66,15 +66,18 @@ export default function Sobre() {
             <section className='missoes-valores'>
                 <div className="missoes-valores-container">
                     <h2 className='missoes-valores-title'>Valores e  Missões</h2>
-                    <div className='container-card'>
-                        {valoresEMissoes.map((item) => (
-                            <div key={item.numero} className='missoes-valores-card'>
-                                <div className='number-valores-missoes-card'>{item.numero}</div>
-                                <h3 className='valores-missoes-title'>{item.titulo}</h3>
-                                <p className='valores-missoes-descricao'>{item.descricao}</p>
-                            </div>
-                        ))}
+                    <div className='card-item'>
+                        <div className='container-card'>
+                            {valoresEMissoes.map((item) => (
+                                <div key={item.numero} className='missoes-valores-card'>
+                                    <div className='number-valores-missoes-card'>{item.numero}</div>
+                                    <h3 className='valores-missoes-title'>{item.titulo}</h3>
+                                    <p className='valores-missoes-descricao'>{item.descricao}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
+
                 </div>
             </section>
         </main>

@@ -140,7 +140,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 // Responsividade
 
 // Dispositivos maiores
-@media only screen and (min-width: 951px) {
+@media only screen and (max-width: 951px) {
     .login-card {
         width: 100%; 
     }

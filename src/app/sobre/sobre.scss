@@ -102,6 +102,11 @@ $font-montserrat: 'Montserrat', sans-serif;
     background: $white;
     padding: 2.5rem 3rem 2rem 1.5rem;
     border-radius: 1em;
+    
+}
+
+.card-item{
+    display: flex;
 }
 
 .number-valores-missoes-card{
@@ -129,10 +134,10 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 
 
-/*Responsividade*/
-/*Tablets*/
+// Responsividade
+// Dispositivos maiores
 
-@media screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px){
     .sobre{
         margin-top: 2rem;
     }
@@ -149,13 +154,33 @@ $font-montserrat: 'Montserrat', sans-serif;
     }
 }
 
-/*Smartphones*/
-@media screen and (max-width: 600px){
+// Dispositivos menores
+@media only screen and (max-width: 950px){
+
+    .missoes-valores{
+        padding: 2rem 1rem;
+    }
+
+    .missoes-valores-card{
+        padding: 1.5rem;
+    }
+
+    .container-card{
+        flex-direction: column;
+    }
+}
+
+
+// Dispositivos menores
+@media only screen and (max-width: 600px){
 
     .destaques-card{
         grid-template-columns: 1fr 1fr;
         gap: 0.7rem;
     }
 
+    .destaques{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
