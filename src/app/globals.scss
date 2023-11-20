@@ -1,22 +1,19 @@
-
-$orange: #FF5C00;
-$blue:#183E9F;
+$orange: #ff5c00;
+$blue: #183e9f;
 $white: white;
 $dark: #1e1c2a;
 
-
-
 // Cabecalho
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     text-decoration: none;
     list-style: none;
 }
 
-.navigation{
+.navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,29 +25,29 @@ $dark: #1e1c2a;
     position: fixed;
 }
 
-.navigation .logo{
+.navigation .logo {
     width: 7%;
     height: 7%;
 }
 
-.navigation ul{
+.navigation ul {
     display: flex;
     align-items: center;
     gap: 5rem;
 }
 
-.navigation ul li a{
+.navigation ul li a {
     color: $blue;
     font-size: 1.3em;
     font-weight: 500;
     transition: ali 0.5s;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
     color: $orange;
 }
 
-.navigation ul li .login-entrar{
+.navigation ul li .login-entrar {
     display: flex;
     background: $blue;
     color: $white;
@@ -59,19 +56,18 @@ $dark: #1e1c2a;
     gap: 7px;
 }
 
-.navigation ul li .login-entrar:hover{
+.navigation ul li .login-entrar:hover {
     background-color: $orange;
     color: $white;
 }
 
-
-.menu{
+.menu {
     cursor: pointer;
     display: none;
     justify-content: center;
 }
 
-.menu .bar{
+.menu .bar {
     display: block;
     width: 28px;
     height: 3px;
@@ -82,38 +78,36 @@ $dark: #1e1c2a;
 }
 
 .menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
+.menu .bar:nth-child(3) {
     background: $blue;
 }
 
-
-main{
+main {
     width: 100%;
     min-height: 80vh;
     padding: 8%;
 }
 
 // Rodape
-.rodape{
+.rodape {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 35px;
-    box-shadow: 0 0.1rem 0.10rem #ffb388;
+    box-shadow: 0 0.1rem 0.1rem #ffb388;
     width: 100%;
     background: $orange;
     gap: 5rem;
     color: $white;
     font-size: 1em;
     font-weight: 500;
-    
 }
 
 .rodape .repositorio-github p {
     font-size: 20px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .rodape .repositorio-github p a {
@@ -124,30 +118,31 @@ main{
     gap: 5px;
 }
 
-
 .rodape .repositorio-github p span {
-    font-size: 30px; 
+    font-size: 30px;
 }
 
+// Responsividade
 
+// Especifica para Menu/Cabeçalho
 
-@media(max-width: 785px){
-    .navigation{
-        padding: 18px 20px;
+@media (max-width: 785px) {
+    .navigation {
+        padding: 18px 80px;
     }
-    .menu{
+    .menu {
         display: block;
     }
-    .menu-ativo .bar:nth-child(1){
-        transform:  translateY(8px) rotate(45deg);
+    .menu-ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
     .menu-ativo .bar:nth-child(2) {
         opacity: 0;
     }
-    .menu-ativo .bar:nth-child(3){
+    .menu-ativo .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    .menu-link{
+    .menu-link {
         position: fixed;
         right: -100%;
         top: 70px;
@@ -158,10 +153,28 @@ main{
         gap: -10px;
         transition: 0.3s;
     }
-    .menu-link.ativo{
+    .menu-link.ativo {
         right: 0;
     }
-    .nav-item{
+    .nav-item {
         margin: 16px 0;
+    }
+}
+
+// Especifica para o Rodapé
+
+@media (max-width: 785px) {
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape .repositorio-github {
+        margin-bottom: 20px;
+    }
+
+    .integrantes {
+        margin-top: 20px;
     }
 }
