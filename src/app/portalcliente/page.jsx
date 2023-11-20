@@ -1,3 +1,4 @@
+"use client"
 import '/src/app/portalcliente/portalcliente.scss'
 import { ImExit } from "react-icons/im";
 import { GrConfigure } from "react-icons/gr";
@@ -8,7 +9,19 @@ import { RiQuestionMark } from "react-icons/ri";
 import { IoWatchOutline } from "react-icons/io5";
 import { RxMagnifyingGlass } from "react-icons/rx";
 
+
+
 export default function PortalCliente() {
+  const login = JSON.parse(sessionStorage.getItem("loginClient")) 
+
+    
+  if (!login  || !login.email) {
+    
+    window.location = '/login';
+    return null; 
+  }
+
+
     const opcoes = [
         {
           titulo: 'Cadastrar Dispositivo',
@@ -51,9 +64,6 @@ export default function PortalCliente() {
           icone: <ImExit />,
         },
       ];
-
-
-
 
     return (
         <main>

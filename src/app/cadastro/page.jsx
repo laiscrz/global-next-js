@@ -28,6 +28,7 @@ export default function Cadastro() {
 
             if (response.ok) {
                 alert("Cadastro realizado com sucesso!");
+                sessionStorage.setItem('loginClient', JSON.stringify(cliente));
                 window.location = '/portalcliente';
             } else {
                 console.error("Erro ao realizar o cadastro.");
@@ -43,8 +44,16 @@ export default function Cadastro() {
 
     // Ao cliente se cadastrar, é gerado um IdCliente
     function gerarId() {
-        return Math.random().toString(36).substr(2, 9);
-      }
+        const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let id = '';
+
+        for (let i = 0; i < 5; i++) {
+            const randomIndex = Math.floor(Math.random() * characters.length);
+            id += characters.charAt(randomIndex);
+        }
+
+        return id;
+    }
 
     return (
         <main className="main-cadastro">
