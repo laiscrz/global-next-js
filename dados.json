@@ -1,0 +1,19 @@
+{
+  "cliente": [
+    {
+      "idCliente": "e8rrfsodl",
+      "nome": "Lais",
+      "genero": "feminino",
+      "endereco": "Av Paulista. 1220",
+      "cpf": "5454898",
+      "email": "lais@gmail.com",
+      "senha": "123456",
+      "idDispositivo": "XHU8256"
+    }
+  ],
+  "dispositivo": [],
+  "manutencao": [],
+  "diagnostico": [],
+  "cuidador": [],
+  "emergencia": []
+}

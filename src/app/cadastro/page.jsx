@@ -1,8 +1,51 @@
-import Link from "next/link";
+"use client"
 import '/src/app/cadastro/cadastro.scss'
-
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Cadastro() {
+    const [cliente, setCliente] = useState({
+        idCliente: gerarId(),
+        nome: '',
+        genero: '',
+        endereco: '',
+        cpf: '',
+        email: '',
+        senha: '',
+        idDispositivo: ''
+    });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch(`http://localhost:5000/cliente`, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(cliente),
+            });
+
+            if (response.ok) {
+                alert("Cadastro realizado com sucesso!");
+                window.location = '/portalcliente';
+            } else {
+                console.error("Erro ao realizar o cadastro.");
+            }
+        } catch (error) {
+            console.error("Erro ao realizar o cadastro:", error);
+        }
+    };
+
+    const handleChange = (e) => {
+        setCliente({ ...cliente, [e.target.name]: e.target.value });
+    };
+
+    // Ao cliente se cadastrar, é gerado um IdCliente
+    function gerarId() {
+        return Math.random().toString(36).substr(2, 9);
+      }
+
     return (
         <main className="main-cadastro">
             <div className="cadastro">
@@ -11,17 +54,18 @@ export default function Cadastro() {
                 </div>
                 <div className="cadastro-box">
                     <h2>Criar Conta</h2>
-                    <p>Ja é Cadastrado ? <Link href={'/login'}>LOGIN</Link></p>
-                    <form>
+                    <p>
+                        Já é Cadastrado? <Link href={'/login'}>LOGIN</Link>
+                    </p>
+                    <form onSubmit={handleSubmit}>
                         <div className="input-group">
                             <div className="cadastro-input">
                                 <label htmlFor="nome">Nome Completo</label>
-                                <input type="text" name="nome" id="nome" required />
-
+                                <input type="text" name="nome" id="nome" required onChange={handleChange} />
                             </div>
                             <div className="cadastro-input">
                                 <label htmlFor="genero">Gênero</label>
-                                <select name="genero" id="genero" defaultValue="" required>
+                                <select name="genero" id="genero" defaultValue="" required onChange={handleChange}>
                                     <option value="" disabled hidden>Selecione o gênero</option>
                                     <option value="feminino">Feminino</option>
                                     <option value="masculino">Masculino</option>
@@ -32,31 +76,27 @@ export default function Cadastro() {
                         <div className="input-group">
                             <div className="cadastro-input">
                                 <label htmlFor="endereco">Endereco</label>
-                                <input type="text" name="endereco" id="endereco" required />
-
+                                <input type="text" name="endereco" id="endereco" required onChange={handleChange} />
                             </div>
                             <div className="cadastro-input">
                                 <label htmlFor="cpf">CPF</label>
-                                <input type="text" name="cpf" id="cpf" required />
-
+                                <input type="text" name="cpf" id="cpf" required onChange={handleChange} />
                             </div>
                         </div>
                         <div className="input-group">
                             <div className="cadastro-input">
                                 <label htmlFor="email">E-mail</label>
-                                <input type="email" name="email" id="email" required />
-
+                                <input type="email" name="email" id="email" required onChange={handleChange} />
                             </div>
                             <div className="cadastro-input">
                                 <label htmlFor="senha">Senha</label>
-                                <input type="password" name="senha" id="senha" required />
-
+                                <input type="password" name="senha" id="senha" required onChange={handleChange} />
                             </div>
                         </div>
                         <div className="input-group">
                             <div className="cadastro-input">
                                 <label htmlFor="idDispositivo">ID do Dispositivo</label>
-                                <input type="text" name="idDispositivo" id="idDispositivo" required />
+                                <input type="text" name="idDispositivo" id="idDispositivo" required onChange={handleChange} />
                                 <p className="p-dispositivo">Que está presente na caixa.</p>
                             </div>
                         </div>
@@ -67,5 +107,5 @@ export default function Cadastro() {
                 </div>
             </div>
         </main>
-    )
+    );
 }
