@@ -126,3 +126,68 @@ $font-montserrat: 'Montserrat', sans-serif;
 }
 
 
+// Responsividade
+
+// Dispositivos maiores
+@media only screen and (max-width: 1200px) {
+    .home {
+        padding: 0 15%; 
+    }
+
+    .home-text {
+        max-width: 50%; 
+    }
+
+    .home-img img {
+        width: 100%;
+    }
+
+    .vantagens-container {
+        gap: 4rem;
+        padding: 10px 150px; 
+    }
+}
+
+// Dispositivos médios
+@media only screen and (max-width: 950px) {
+    .home {
+        padding: 5%;
+        flex-direction: column; 
+        gap: 2rem;
+    }
+
+    .home-text, .home-img {
+        width: 400px; 
+    }
+
+    .home-text {
+        max-width: 60%; 
+    }
+
+     .home-img img {
+        margin-bottom: 20px;
+        width: 500px; 
+    }
+
+    .vantagens-lifecare{
+        margin-top: 25rem;
+    }
+
+    .vantagens-container {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+}
+
+// Dispositivos pequenos
+@media only screen and (max-width: 680px) {
+
+    .home-text .text-h1{
+        font-size: 2em;
+    }
+
+    .vantagens-lifecare{
+        margin-top: 25rem;
+    }
+
+}
