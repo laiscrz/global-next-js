@@ -133,15 +133,14 @@ form .cadastro-btn button {
 // Responsividade
 
 // Dispositivos maiores
-@media (max-width: 1200px) {
-  
+@media only screen and (max-width: 1200px) {
     .cadastro {
-      width: 900px;
+        width: 900px;
     }
 }
 
-// Dispositivos medios
-@media (max-width: 930px) {
+// Dispositivos médios
+@media only screen and (max-width: 930px) {
     .cadastro-img {
         display: none;
     }
@@ -156,21 +155,17 @@ form .cadastro-btn button {
     }
 }
 
-// Dispositivos Pequenos
-@media (max-width: 500px) {
-
-    .cadastro .cadastro-box .input-group .cadastro-input{
+// Dispositivos pequenos
+@media only screen and (max-width: 500px) {
+    .cadastro .cadastro-box .input-group .cadastro-input {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
-
-
     .cadastro-box {
         width: 80%;
         border-radius: 20px;
     }
-
-
 }
+

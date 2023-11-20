@@ -35,6 +35,7 @@ $font-montserrat: 'Montserrat', sans-serif;
     align-items: center;
     flex-direction: column;
     gap: 4px;
+    padding: 5rem 0 0 0;
 }
 
 .login-img{
@@ -134,4 +135,48 @@ $font-montserrat: 'Montserrat', sans-serif;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: underline;
     color: #dedede;
+}
+
+// Responsividade
+
+// Dispositivos maiores
+@media only screen and (min-width: 951px) {
+    .login-card {
+        width: 100%; 
+    }
+}
+
+// Dispositivos medios
+@media only screen and (max-width: 950px){
+    .login-card{
+        width: 85%;
+    }
+
+
+}
+
+// Dispositivos pequenos
+@media only screen and (max-width: 600px){
+    .main-login{
+        height: 1024px;
+    }
+
+    .login{
+        flex-direction: column;
+    }
+
+    .login-text{
+        width: 100%;
+        height: auto;
+    }
+
+    .login-text > h2{
+        display: none;
+    }
+
+    .login-img{
+        width: 200px;
+        height: auto;
+    }
+
 }
