@@ -99,3 +99,39 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 }
 
+// Responsividade
+
+// Dispositivos maiores
+@media (max-width: 1200px) {
+
+    .p-cliente-inicial{
+        flex-direction: column;
+    }
+
+    .p-cliente-inicial .portal-img img {
+        width: 15rem;
+    }
+
+    .p-cliente-inicial .portal-text > h2 {
+        font-size: 1.8rem;
+    }
+
+    .opn-cliente > h2 {
+        padding: 3rem 0 0 0;
+    }
+}
+
+// Dispositivos médios
+@media (max-width: 930px) {
+    .opn-cliente .opcoes {
+        grid-template-columns: repeat(2, minmax(240px, 2fr));
+        gap: 16px;
+    }
+}
+
+// Dispositivos pequenos
+@media (max-width: 600px) {
+    .opn-cliente .opcoes {
+        grid-template-columns: 1fr;
+    }
+}
