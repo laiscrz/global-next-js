@@ -152,3 +152,46 @@ $font-montserrat: 'Montserrat', sans-serif;
     font-size: 280%;
 
 }
+
+// Responsividade
+
+// Dispositivos maiores
+@media only screen and (max-width: 1200px) {
+    .solucao-container {
+        gap: 4rem; 
+    }
+    .solucao-img {
+        width: 30%; 
+    }
+    .solucao-text {
+        width: 60%; 
+    }
+}
+
+// Dispositivos médios
+@media only screen and (max-width: 950px) {
+    
+
+    .sobre-saiba-container{
+        gap: 5rem;
+        flex-direction: column;
+    }
+
+    .saiba-categorias{
+        grid-template-columns: repeat(1,1fr)
+    }
+
+}
+
+// Dispositivos pequenos
+@media only screen and (max-width: 650px) {
+    .solucao-container {
+        flex-direction: column; 
+    }
+    .solucao-img {
+        width: 80%; 
+    }
+    .solucao-text {
+        width: 100%; 
+    }
+}
