@@ -7,6 +7,7 @@ import { FaUserGear } from "react-icons/fa6";
 import { AiFillAlert } from "react-icons/ai";
 import { RiQuestionMark } from "react-icons/ri";
 import { IoWatchOutline } from "react-icons/io5";
+import { MdOutlineMedicalInformation } from "react-icons/md";
 import { RxMagnifyingGlass } from "react-icons/rx";
 import Link from 'next/link';
 import { useState } from 'react';
@@ -49,10 +50,16 @@ export default function PortalCliente() {
       rota: '/portalcliente/dispositivo',
     },
     {
+      titulo: 'Cadastrar Cuidador',
+      descricao: 'Cadastre um novo cuidador ou responsável.',
+      icone: <MdOutlineMedicalInformation />,
+      rota: '/portalcliente/cuidador/cadastrar',
+    },
+    {
       titulo: 'Informações do Cuidador',
       descricao: 'Visualize informações sobre o seu cuidador.',
       icone: <RiQuestionMark />,
-      rota: '/portalcliente/cuidador/visualizar',
+      rota: '/portalcliente/cuidador',
     },
     {
       titulo: 'Gerenciar Diagnósticos',

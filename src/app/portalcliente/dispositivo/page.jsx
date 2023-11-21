@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from 'react';
-import BotoesOpcoes from '@/components/botoesopcoes';
 import '/src/app/portalcliente/opcoes.scss';
+import BotaoVoltarMenu from '@/components/botaovoltarmenu';
 
 export default function VisualizarDispositivo() {
   const [dispositivos, setDispositivos] = useState([]);
@@ -19,7 +19,7 @@ export default function VisualizarDispositivo() {
         <div className="dispositivo-img">
           <h2>Dispositivos Cadastrados</h2>
           <img src="/image/visu_disp.png" alt="Ver dispositivos" />
-          <BotoesOpcoes className="btn-disp-visu" />
+          <BotaoVoltarMenu/>
         </div>
         <div className="dispositivo-table">
           <table>
