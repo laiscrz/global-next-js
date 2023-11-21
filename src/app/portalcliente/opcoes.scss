@@ -25,7 +25,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 }
 
-.dispositivo-cadastro{
+.dispositivo-cadastro, .cuidador-cadastro{
     width: 1024px;
     padding: 5rem 0 0 10rem;
     display: flex;
@@ -40,12 +40,12 @@ $font-montserrat: 'Montserrat', sans-serif;
     color: $orange;
 }
 
-.dispositivo-img{
+.dispositivo-img, .cuidador-img{
     width: 90%;
     padding: 0 0 0 8rem;
 }
 
-.dispositivo-img img{
+.dispositivo-img img, .cuidador-img img{
     width: 400px;
 }
 
@@ -78,7 +78,7 @@ thead th{
 
 
 
-.dispositivo-box{
+.dispositivo-box, .cuidador-box{
     font-family: $font-montserrat;
     padding: 30px 40px;
     width: 80%;
@@ -86,17 +86,17 @@ thead th{
     background-color: $white-light;
 }
 
-.dispositivo-box > h2{
+.dispositivo-box > h2, .cuidador-box >h2{
     font-family: $font-poppins;
     font-size: 30px;
     color: $orange;
 }
 
-form .dispositivo-input {
+form .dispositivo-input,  form .cuidador-input{
     margin-bottom: 15px;
 }
 
-form .dispositivo-input label {
+form .dispositivo-input label, form .cuidador-input label {
     color: $orange-light;
     font-weight: bold;
     display: block;
@@ -104,9 +104,10 @@ form .dispositivo-input label {
     font-family: $font-montserrat;
 }
 
-form .dispositivo-input input {
+form .dispositivo-input input, form .cuidador-input input,
+select {
     width: 250px;
-    height: 30px;
+    height: 50px;
     background: $white;
     border-radius: 20px;
     outline: none;
@@ -116,7 +117,6 @@ form .dispositivo-input input {
     color: $orange;
     transition: all 0.4s ease;
 }
-
 
 
 .container-btn{
