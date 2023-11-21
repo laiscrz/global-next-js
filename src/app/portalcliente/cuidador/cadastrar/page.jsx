@@ -45,7 +45,7 @@ export default function CadastrarCuidador() {
                 alert('Cadastro do cuidador realizado com sucesso!');
                 window.location = '/portalcliente';
             } else {
-                console.error('Erro ao realizar o cadastro do cuidador.');
+                alert('Erro ao realizar o cadastro do cuidador.');
             }
         } catch (error) {
             console.error('Erro ao realizar o cadastro do cuidador:', error);

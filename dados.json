@@ -39,21 +39,21 @@
       "tipoServico": "Substituição da Bateria",
       "dataManutencao": "2023/11/2021",
       "status": "Concluída",
-      "custo": 50.00
+      "custo": 50.59
     },
     {
       "idServico": "MSW124",
       "tipoServico": "Atualização de Software",
       "dataManutencao": "2023/11/2022",
       "status": "Em Andamento",
-      "custo": 30.00
+      "custo": 30.87
     },
     {
       "idServico": "MSW125",
       "tipoServico": "Reparo de Tela Quebrada",
       "dataManutencao": "2023/11/2023",
       "status": "Pendente",
-      "custo": 80.00
+      "custo": 80.56
     }
   ],
   "diagnostico": [],

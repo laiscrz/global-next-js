@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap");
+
 $orange: #ff5c00;
+$orange-light: #ec8f5e;
 $blue: #183e9f;
 $white: white;
+$white-light: #dedede;
+$caixa-login: #ffa570;
 $dark: #1e1c2a;
+$font-poppins: "Poppins", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
+
 
 // Cabecalho
 * {
@@ -93,6 +101,18 @@ main {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error > h2{
+    font-family: $font-poppins;
+    color: #ff5c00;
+
 }
 
 // Rodape

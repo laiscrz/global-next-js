@@ -31,7 +31,7 @@ export default function Cadastro() {
                 sessionStorage.setItem('loginClient', JSON.stringify(cliente));
                 window.location = '/portalcliente';
             } else {
-                console.error("Erro ao realizar o cadastro.");
+                alert("Erro ao realizar o cadastro.");
             }
         } catch (error) {
             console.error("Erro ao realizar o cadastro:", error);

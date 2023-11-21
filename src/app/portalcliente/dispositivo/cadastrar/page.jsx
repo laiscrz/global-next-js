@@ -36,7 +36,7 @@ export default function CadastrarDispositivo() {
         alert('Cadastro de dispositivo realizado com sucesso!');
         window.location = '/portalcliente';
       } else {
-        console.error('Erro ao realizar o cadastro de dispositivo.');
+        alert('Erro ao realizar o cadastro de dispositivo.');
       }
     } catch (error) {
       console.error('Erro ao realizar o cadastro de dispositivo:', error);
