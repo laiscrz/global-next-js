@@ -15,7 +15,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 
 
-.dispositivo-visualizar, .cuidador-visualizar{
+.dispositivo-visualizar, .cuidador-visualizar, .emergencia-visualizar{
     width: 1024px;
     padding: 5rem 0 0 10rem;
     display: flex;
@@ -34,18 +34,18 @@ $font-montserrat: 'Montserrat', sans-serif;
     gap: 5rem;
 }
 
-.dispositivo-img > h2, .cuidador-img > h2{
+.dispositivo-img > h2, .cuidador-img > h2, .emergencia-img > h2{
     font-family: $font-poppins;
     text-align: center;
     color: $orange;
 }
 
-.dispositivo-img, .cuidador-img{
+.dispositivo-img, .cuidador-img, .emergencia-img{
     width: 90%;
     padding: 0 0 0 8rem;
 }
 
-.dispositivo-img img, .cuidador-img img{
+.dispositivo-img img, .cuidador-img img, .emergencia-img img{
     width: 400px;
 }
 

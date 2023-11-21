@@ -73,11 +73,11 @@ export default function PortalCliente() {
       titulo: 'Configurações de Conta',
       descricao: 'Atualize suas informações de conta e preferências.',
       icone: <FaUserGear />,
-      rota: '/portalcliente/cliente/visualizar',
+      rota: '/portalcliente/cliente',
     },
     {
-      titulo: 'Visualizar Serviços de Manutenção',
-      descricao: 'Visualize serviços de manutenção para o seu dispositivo.',
+      titulo: 'Historico Serviços de Manutenção',
+      descricao: 'Visualize o historico de manutenção feitas em seu dispositivo.',
       icone: <GrConfigure />,
       rota : '/portalcliente/manutencao/visualizar',
     },
@@ -85,7 +85,7 @@ export default function PortalCliente() {
       titulo: 'Histórico de Serviços de Emergência',
       descricao: 'Visualize o histórico de serviços de emergência.',
       icone: <AiFillAlert />,
-      rota: '/portalcliente/emergencia/visualizar',
+      rota: '/portalcliente/emergencia',
     },
     {
       titulo: 'Sair',

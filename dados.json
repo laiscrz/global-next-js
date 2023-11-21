@@ -46,5 +46,14 @@
       "id": 1
     }
   ],
-  "emergencia": []
+  "emergencia": [
+    {
+      "idServico": "XHI58",
+      "tipoServico": "Atendimento de Urgência",
+      "tipoEmergencia": "Acidente na escada",
+      "medicoResponsavel": "Dr. Silva",
+      "gravidade": "Alta",
+      "id" : 1
+    }
+  ]
 }
