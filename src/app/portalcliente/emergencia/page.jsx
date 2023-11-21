@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import '/src/app/portalcliente/opcoes.scss'
 
 
-export default function Emergencia() {
+export default function VisualizarEmergencia() {
 
     const [emergencias, setEmergencias] = useState([]);
 

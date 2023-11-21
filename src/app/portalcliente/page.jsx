@@ -79,7 +79,7 @@ export default function PortalCliente() {
       titulo: 'Historico Serviços de Manutenção',
       descricao: 'Visualize o historico de manutenção feitas em seu dispositivo.',
       icone: <GrConfigure />,
-      rota : '/portalcliente/manutencao/visualizar',
+      rota : '/portalcliente/manutencao',
     },
     {
       titulo: 'Histórico de Serviços de Emergência',

@@ -33,7 +33,29 @@
       "id": 1
     }
   ],
-  "manutencao": [],
+  "manutencao": [
+    {
+      "idServico": "MSW123",
+      "tipoServico": "Substituição da Bateria",
+      "dataManutencao": "2023/11/2021",
+      "status": "Concluída",
+      "custo": 50.00
+    },
+    {
+      "idServico": "MSW124",
+      "tipoServico": "Atualização de Software",
+      "dataManutencao": "2023/11/2022",
+      "status": "Em Andamento",
+      "custo": 30.00
+    },
+    {
+      "idServico": "MSW125",
+      "tipoServico": "Reparo de Tela Quebrada",
+      "dataManutencao": "2023/11/2023",
+      "status": "Pendente",
+      "custo": 80.00
+    }
+  ],
   "diagnostico": [],
   "cuidador": [
     {
@@ -53,7 +75,7 @@
       "tipoEmergencia": "Acidente na escada",
       "medicoResponsavel": "Dr. Silva",
       "gravidade": "Alta",
-      "id" : 1
+      "id": 1
     }
   ]
 }
