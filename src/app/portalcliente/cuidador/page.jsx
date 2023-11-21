@@ -37,7 +37,7 @@ export default function VisualizarCuidador() {
                         </thead>
                         <tbody>
                             {cuidadores.map((cuidador) => (
-                                <tr key={cuidador.id}>
+                                <tr key={cuidador.idCuidador}>
                                     <td>{cuidador.idCuidador}</td>
                                     <td>{cuidador.nome}</td>
                                     <td>{cuidador.genero}</td>

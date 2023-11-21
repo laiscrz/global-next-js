@@ -35,7 +35,7 @@ export default function VisualizarDispositivo() {
             </thead>
             <tbody>
               {dispositivos.map((dispositivo) => (
-                <tr key={dispositivo.id}>
+                <tr key={dispositivo.idDispositivo}>
                   <td>{dispositivo.idDispositivo}</td>
                   <td>{dispositivo.versao}</td>
                   <td>{dispositivo.status}</td>

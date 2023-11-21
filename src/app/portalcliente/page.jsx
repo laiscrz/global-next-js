@@ -67,7 +67,7 @@ export default function PortalCliente() {
       titulo: 'Gerenciar Diagnósticos',
       descricao: 'Visualize e gerencie diagnósticos relacionados ao seu dispositivo.',
       icone: <FaFileMedicalAlt />,
-      rota: '/portalcliente/diagnostico/visualizar',
+      rota: '/portalcliente/diagnostico',
     },
     {
       titulo: 'Configurações de Conta',

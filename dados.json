@@ -56,7 +56,19 @@
       "custo": 80.56
     }
   ],
-  "diagnostico": [],
+  "diagnostico": [
+    {
+      "dataSolicitacao": "05/12/2023",
+      "dataEmissao": "06/12/2023",
+      "estadoGeral": "Estável",
+      "idDiagnostico": "PP668",
+      "sinaisVitais": "Pulso regular, Pressão arterial normal",
+      "idDispositivo": "MACHP",
+      "idCuidador": "0LI90",
+      "idServico": "9871",
+      "sinaisQueda": "Sem sinais de queda"
+    }
+  ],
   "cuidador": [
     {
       "idCuidador": "A62MO",
