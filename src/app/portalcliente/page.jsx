@@ -10,19 +10,21 @@ import { IoWatchOutline } from "react-icons/io5";
 import { MdOutlineMedicalInformation } from "react-icons/md";
 import { RxMagnifyingGlass } from "react-icons/rx";
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
 export default function PortalCliente() {
-  const login = JSON.parse(sessionStorage.getItem("loginClient"))
-  const [user, setUser] = useState(login);
+  const [user, setUser] = useState(null);
 
-  if (!login || !login.email) {
+  useEffect(() => {
+    const login = JSON.parse(sessionStorage.getItem("loginClient"));
+    setUser(login);
 
-    window.location = '/login';
-    return null;
-  }
+    if (!login || !login.email) {
+      window.location = '/login';
+    }
+  }, []);
 
   const deslogar = () => {
     try {

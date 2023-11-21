@@ -15,7 +15,7 @@ $font-montserrat: 'Montserrat', sans-serif;
 
 
 
-.dispositivo-visualizar{
+.dispositivo-visualizar, .cuidador-visualizar{
     width: 1024px;
     padding: 5rem 0 0 10rem;
     display: flex;
@@ -34,7 +34,7 @@ $font-montserrat: 'Montserrat', sans-serif;
     gap: 5rem;
 }
 
-.dispositivo-img > h2{
+.dispositivo-img > h2, .cuidador-img > h2{
     font-family: $font-poppins;
     text-align: center;
     color: $orange;
