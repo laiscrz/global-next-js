@@ -103,13 +103,13 @@ main {
     gap: 10px;
 }
 
-.error{
+.error,.loading{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.error > h2{
+.error > h2,.loading > h2{
     font-family: $font-poppins;
     color: #ff5c00;
 
