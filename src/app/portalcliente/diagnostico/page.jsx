@@ -2,28 +2,46 @@
 import '/src/app/portalcliente/opcoes.scss'
 import BotaoVoltarMenu from "@/components/botaovoltarmenu";
 import { useEffect, useState } from "react";
+import { FaTimesCircle } from 'react-icons/fa';
 
 export default function GerenciarDiagnostico() {
-    const [diagnosticos, setDiagnosticos] = useState([]);
+  const [diagnosticos, setDiagnosticos] = useState([]);
 
-    useEffect(() => {
-        fetch(`http://localhost:5000/diagnostico`)
-            .then(resp => resp.json())
-            .then(resp => setDiagnosticos(resp))
-            .catch(error => console.error(error))
-    }, [])
-
-
+  useEffect(() => {
+    fetch(`http://localhost:8080/GlobalJava/api/diagnostico`)
+      .then(resp => resp.json())
+      .then(resp => setDiagnosticos(resp))
+      .catch(error => console.error(error))
+  }, [])
 
 
+  const handleDelete = (idDiagnostico) => {
+    if (idDiagnostico) {
+      fetch(`http://localhost:8080/GlobalJava/api/diagnostico/${idDiagnostico}`, {
+        method: 'DELETE'
+      })
+        .then(response => {
+          console.log('Resposta do servidor:', response);
+          return response.json();
+        })
+        .catch(error => console.error(error))
+        .finally(() => {
+          alert('Diagnostico Excluido com Sucesso!')
+          window.location.reload();
+        });
+    } else {
+      alert('idDiagnostico indefinido. Não é possível excluir.');
+    }
+  }
 
-    return (
-        <main>
-            <section className="diagnostico-visualizar">
+
+  return (
+    <main>
+      <section className="diagnostico-visualizar">
         <div className="diagnostico-img">
           <h2>Historicos de Diagnosticos</h2>
           <img src="/image/visu_diagnost.png" alt="Ver diagnostico" />
-          <BotaoVoltarMenu/>
+          <BotaoVoltarMenu />
         </div>
         <div className="diagnostico-table">
           <table>
@@ -53,13 +71,19 @@ export default function GerenciarDiagnostico() {
                   <td>{diagnostico.idDispositivo}</td>
                   <td>{diagnostico.dataSolicitacao}</td>
                   <td>{diagnostico.dataEmissao}</td>
-                  <td>Opções</td> 
+                  <td>
+                    <div className="btn-container">
+                      <button onClick={handleDelete.bind(this, diagnostico.idDiagnostico)} className='btn-metodo'>
+                        <FaTimesCircle /> Exluir
+                      </button>
+                    </div>
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       </section>
-        </main>
-    )
+    </main>
+  )
 }
