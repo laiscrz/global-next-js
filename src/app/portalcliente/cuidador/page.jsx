@@ -2,18 +2,37 @@
 import '/src/app/portalcliente/opcoes.scss'
 import BotaoVoltarMenu from "@/components/botaovoltarmenu";
 import { useEffect, useState } from "react";
+import { FaEdit, FaTimesCircle } from 'react-icons/fa';
 
 export default function VisualizarCuidador() {
     const [cuidadores, setCuidadores] = useState([]);
 
-  useEffect(() => {
-    fetch(`http://localhost:5000/cuidador`)
-        .then(resp => resp.json())
-        .then(resp => setCuidadores(resp))
-        .catch(error => console.error(error))
+    useEffect(() => {
+        fetch(`http://localhost:8080/GlobalJava/api/cuidador`)
+            .then(resp => resp.json())
+            .then(resp => setCuidadores(resp))
+            .catch(error => console.error(error))
     }, [])
 
 
+    const handleDelete = (idCuidador) => {
+        if (idCuidador) {
+            fetch(`http://localhost:8080/GlobalJava/api/cuidador/${idCuidador}`, {
+                method: 'DELETE'
+            })
+                .then(response => {
+                    console.log('Resposta do servidor:', response);
+                    return response.json();
+                })
+                .catch(error => console.error(error))
+                .finally(() => {
+                    alert('Cuidador Excluido com Sucesso!')
+                    window.location.reload();
+                });
+        } else {
+            alert('idCuidador indefinido. Não é possível excluir.');
+        }
+    }
 
     return (
         <main>
@@ -43,7 +62,18 @@ export default function VisualizarCuidador() {
                                     <td>{cuidador.genero}</td>
                                     <td>{cuidador.cpf}</td>
                                     <td>{cuidador.telefone}</td>
-                                    <td>Opções</td>
+                                    <td>
+                                        <div className="btn-container">
+                                            <button className="btn-metodo">
+                                                <FaEdit /> Editar Telefone
+                                            </button>
+
+                                            <button onClick={handleDelete.bind(this, cuidador.idCuidador)} className='btn-metodo'>
+                                                <FaTimesCircle /> Exluir
+                                            </button>
+                                        </div>
+
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
