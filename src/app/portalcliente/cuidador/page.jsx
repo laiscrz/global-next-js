@@ -1,6 +1,7 @@
 "use client"
 import '/src/app/portalcliente/opcoes.scss'
 import BotaoVoltarMenu from "@/components/botaovoltarmenu";
+import Link from 'next/link';
 import { useEffect, useState } from "react";
 import { FaEdit, FaTimesCircle } from 'react-icons/fa';
 
@@ -64,10 +65,11 @@ export default function VisualizarCuidador() {
                                     <td>{cuidador.telefone}</td>
                                     <td>
                                         <div className="btn-container">
+                                        <Link href="/portalcliente/cuidador/atualizar/[idCuidador]" as={`/portalcliente/cuidador/atualizar/${cuidador.idCuidador}`}>
                                             <button className="btn-metodo">
                                                 <FaEdit /> Editar Telefone
                                             </button>
-
+                                        </Link>
                                             <button onClick={handleDelete.bind(this, cuidador.idCuidador)} className='btn-metodo'>
                                                 <FaTimesCircle /> Exluir
                                             </button>

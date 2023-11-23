@@ -76,7 +76,7 @@
       "genero": "masculino",
       "endereco": "Av Itaquera, 1452",
       "cpf": "5454",
-      "telefone": "11956235847",
+      "telefone": 956235847,
       "id": 1
     },
     {
@@ -85,7 +85,7 @@
       "genero": "feminino",
       "endereco": "Av Itaquera, 1452",
       "cpf": "54541565",
-      "telefone": "11956235847",
+      "telefone": 956235847,
       "id": 2
     }
   ],

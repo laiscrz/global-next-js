@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@500&display=swap");
 
-
-$orange: #FF5C00;
-$orange-light: #EC8F5E;
-$blue:#183E9F;
+$orange: #ff5c00;
+$orange-light: #ec8f5e;
+$blue: #183e9f;
 $white: white;
 $white-light: #dedede;
 $white-header: rgba(255, 161, 107, 0.844);
 $dark: #1e1c2a;
 $opcao-fundo: rgba(164, 164, 164, 0.245);
-$font-poppins:'Poppins', sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
+$font-poppins: "Poppins", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
 
-
-
-
-.dispositivo-visualizar, .cuidador-visualizar, .emergencia-visualizar, .manutencao-visualizar, .diagnostico-visualizar{
+.dispositivo-visualizar,
+.cuidador-visualizar,
+.emergencia-visualizar,
+.manutencao-visualizar,
+.diagnostico-visualizar {
     width: 930px;
     padding: 5rem 0 0 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-
 }
 
-.dispositivo-cadastro, .cuidador-cadastro{
+.dispositivo-cadastro,
+.cuidador-cadastro,
+.atualizar-container {
     width: 1024px;
     padding: 5rem 0 0 10rem;
     display: flex;
@@ -34,47 +35,61 @@ $font-montserrat: 'Montserrat', sans-serif;
     gap: 5rem;
 }
 
-.dispositivo-img > h2, .cuidador-img > h2, .emergencia-img > h2, .manutencao-img > h2, 
-.diagnostico-img > h2{
+.dispositivo-img > h2,
+.cuidador-img > h2,
+.emergencia-img > h2,
+.manutencao-img > h2,
+.diagnostico-img > h2,
+.dados-atuais > h2 {
     font-family: $font-poppins;
     text-align: center;
     color: $orange;
 }
 
-.dispositivo-img, .cuidador-img, .emergencia-img, .manutencao-img, .diagnostico-img{
+.dispositivo-img,
+.cuidador-img,
+.emergencia-img,
+.manutencao-img,
+.diagnostico-img,
+.dados-atuais {
     width: 90%;
     padding: 0 0 0 8rem;
 }
 
-.dispositivo-img img, .cuidador-img img, .emergencia-img img, .manutencao-img img, .diagnostico-img img{
+.dispositivo-img img,
+.cuidador-img img,
+.emergencia-img img,
+.manutencao-img img,
+.diagnostico-img img {
     width: 400px;
 }
 
-table{
+table {
     width: 50vw;
     min-height: 20vh;
     background: $white-light;
-    box-shadow: 0 .4rem .8rem #0005;
-    border-radius: .8rem;
+    box-shadow: 0 0.4rem 0.8rem #0005;
+    border-radius: 0.8rem;
 }
 
-table th,td{
+table th,
+td {
     border-collapse: collapse;
     padding: 1rem;
-
 }
 
-thead th{
+thead th {
     position: sticky;
     font-family: $font-montserrat;
     text-align: center;
     background: $orange;
-    border-radius: .8rem ;
+    border-radius: 0.8rem;
     color: $white;
 }
 
-
-.dispositivo-box, .cuidador-box{
+.dispositivo-box,
+.cuidador-box,
+.atualizar-box {
     font-family: $font-montserrat;
     padding: 30px 40px;
     width: 80%;
@@ -82,17 +97,22 @@ thead th{
     background-color: $white-light;
 }
 
-.dispositivo-box > h2, .cuidador-box >h2{
+.dispositivo-box > h2,
+.cuidador-box > h2,
+.atualizar-box form > h2, .atualizar-container .dados-atuais h2 {
     font-family: $font-poppins;
     font-size: 30px;
     color: $orange;
 }
 
-form .dispositivo-input,  form .cuidador-input{
+form .dispositivo-input,
+form .cuidador-input {
     margin-bottom: 15px;
 }
 
-form .dispositivo-input label, form .cuidador-input label {
+form .dispositivo-input label,
+form .cuidador-input label,
+form .atualizar-input label {
     color: $orange-light;
     font-weight: bold;
     display: block;
@@ -100,7 +120,9 @@ form .dispositivo-input label, form .cuidador-input label {
     font-family: $font-montserrat;
 }
 
-form .dispositivo-input input, form .cuidador-input input,
+form .dispositivo-input input,
+form .atualizar-input input,
+form .cuidador-input input,
 select {
     width: 250px;
     height: 50px;
@@ -114,8 +136,7 @@ select {
     transition: all 0.4s ease;
 }
 
-
-.container-btn{
+.container-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,12 +158,10 @@ select {
     font-weight: 800;
 }
 
-.container-btn button a{
+.container-btn button a {
     color: $white;
 }
-
-
- .btn-metodo {
+.btn-metodo {
     background-color: $orange-light;
     margin-left: 20px;
     padding: 5px;
@@ -154,3 +173,54 @@ select {
     cursor: pointer;
     font-weight: 800;
 }
+
+
+
+.atualizar-container .dados-atuais {
+    text-align: center;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.atualizar-container .atualizar-box{
+    height: 45vh;
+}
+
+
+.atualizar-container .dados-atuais .icon-data {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: $orange; 
+}
+
+.atualizar-container .dados-atuais .dado-atual {
+    display: flex;
+   justify-content: center;
+    margin-bottom: 1rem;
+    margin-bottom: 15px;
+}
+
+.atualizar-container .dados-atuais .dado-atual .dado {
+
+
+    span {
+        font-weight: bold;
+        font-family: $font-montserrat;
+        background: $orange;
+        color: $white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    p {
+        margin-left: 1rem;
+        font-family: monospace;
+        min-height: 45px;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+

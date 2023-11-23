@@ -32,6 +32,20 @@ export default function CadastrarCuidador() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+
+        if (cuidador.telefone.length < 9) {
+            alert("O telefone do cuidador deve ter no máximo 9 dígitos. Ex. 912345678");
+            return;
+        }
+
+       
+        if (cuidador.cpf.length !== 14) {
+            alert("O CPF do cuidador deve ter exatamente 14 dígitos. Ex. 123.456.789-10");
+            return;
+        }
+
+
         try {
             const response = await fetch(`http://localhost:8080/GlobalJava/api/cuidador`, {
                 method: 'POST',
@@ -61,7 +75,7 @@ export default function CadastrarCuidador() {
                 <div className="cuidador-box">
                     <h2>Cadastre o seu cuidador</h2>
                     <form onSubmit={handleSubmit}>
-                    <div className="input-group">
+                        <div className="input-group">
                             <div className="cuidador-input">
                                 <label htmlFor="nome">Nome Completo</label>
                                 <input type="text" name="nome" id="nome" required onChange={handleChange} />
