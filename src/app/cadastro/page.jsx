@@ -18,7 +18,7 @@ export default function Cadastro() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/cliente`, {
+            const response = await fetch(`http://localhost:8080/GlobalJava/api/cliente`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",

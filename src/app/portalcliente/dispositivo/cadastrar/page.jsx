@@ -24,7 +24,7 @@ export default function CadastrarDispositivo() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/dispositivo`, {
+      const response = await fetch(`http://localhost:8080/GlobalJava/api/dispositivo`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
