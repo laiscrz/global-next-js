@@ -13,7 +13,7 @@ export default function Login() {
 
     useEffect(() => {
         
-        fetch('http://localhost:5000/cliente') 
+        fetch('http://localhost:8080/GlobalJava/api/cliente/') 
             .then(response => response.json())
             .then(clientes => setListaClientes(clientes))
             .catch(error => console.error('Erro ao obter lista de clientes:', error));
