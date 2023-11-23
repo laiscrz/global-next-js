@@ -98,5 +98,5 @@ Aqui estão os membros do grupo e os cargos de cada um durante o desenvolvimento
   - Turma: 1TDSPI
   - Cargo: AI and ChatBot
 
-**Observação:** ***Todos os membros contribuíram para a matéria de Software Design & TX. Parabéns pelo trabalho em equipe!***
+**Observação:** ***Todos os membros contribuíram para a matéria de Software Design & TX.***
 

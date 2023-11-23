@@ -17,6 +17,18 @@ export default function Cadastro() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (cliente.cpf.length !== 14) {
+            alert("O CPF do cliente deve ter exatamente 14 dígitos. Ex. 123.456.789-10");
+            return;
+        }
+
+        if (cliente.senha.length < 8) {
+            alert("A senha deve ter no mínimo 8 caracteres.");
+            return;
+        }
+
+
         try {
             const response = await fetch(`http://localhost:8080/GlobalJava/api/cliente`, {
                 method: 'POST',

@@ -231,3 +231,99 @@ select {
     }
 }
 
+// Responsividade
+
+// Tamanhos grandes
+@media only screen and (max-width: 1200px) {
+    .dispositivo-visualizar,
+    .cuidador-visualizar,
+    .emergencia-visualizar,
+    .manutencao-visualizar,
+    .diagnostico-visualizar,
+    .dispositivo-cadastro,
+    .cuidador-cadastro,
+    .atualizar-container {
+        width: 100%;
+        padding: 5rem 2rem;
+        gap: 2rem;
+    }
+
+    .dispositivo-img,
+    .cuidador-img,
+    .emergencia-img,
+    .manutencao-img,
+    .diagnostico-img,
+    .dados-atuais {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .dispositivo-box,
+    .cuidador-box,
+    .atualizar-box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .container-btn button {
+        width: 100%;
+    }
+}
+
+// Tamanhos médios
+@media only screen and (max-width: 930px) {
+    .dispositivo-visualizar,
+    .cuidador-visualizar,
+    .dispositivo-cadastro,
+    .cuidador-cadastro,
+    .atualizar-container {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 2rem;
+    }
+
+    .dispositivo-img,
+    .cuidador-img,
+    .dados-atuais {
+        width: 100%;
+        padding: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .dispositivo-box,
+    .cuidador-box,
+    .atualizar-box {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+// Tamanhos pequenos
+@media only screen and (max-width: 600px) {
+    .dispositivo-img,
+    .cuidador-img,
+    .emergencia-img,
+    .manutencao-img,
+    .diagnostico-img,
+    .dados-atuais {
+        padding: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .dispositivo-box,
+    .cuidador-box,
+    .atualizar-box {
+        width: 100%;
+        padding: 15px;
+    }
+}

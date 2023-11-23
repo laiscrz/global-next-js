@@ -1,4 +1,5 @@
 "use client"
+import BotaoVoltarMenu from '@/components/botaovoltarmenu';
 import '/src/app/portalcliente/opcoes.scss'
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -114,11 +115,7 @@ export default function ClientesDados() {
                         <div className="container-btn">
                             <button type="submit" className="btn-atualizar">Atualizar Endereco</button>
                         </div>
-                        <Link href={'/portalcliente/cliente'}>
-                        <div className="container-btn">
-                            <button className="btn-atualizar">Página Anterior</button>
-                        </div>
-                    </Link>
+                        <BotaoVoltarMenu/>
                     </form>
                 </div>
             </div>
