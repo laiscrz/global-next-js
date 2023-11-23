@@ -31,6 +31,14 @@
       "cor": "Branco",
       "dataFabricacao": "12/04/2008",
       "id": 1
+    },
+    {
+      "idDispositivo": "XH125",
+      "versao": "1.0.2",
+      "status": "Ativo",
+      "cor": "Branco",
+      "dataFabricacao": "12/05/2022",
+      "id": 2
     }
   ],
   "manutencao": [
