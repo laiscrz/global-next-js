@@ -67,7 +67,7 @@ export default function VisualizarDispositivo() {
                     <div className="btn-container">
                       <Link href="/portalcliente/dispositivo/atualizar/[idDispositivo]" as={`/portalcliente/dispositivo/atualizar/${dispositivo.idDispositivo}`}>
                         <button className="btn-metodo">
-                          <FaEdit /> Editar Telefone
+                          <FaEdit /> Editar Versão
                         </button>
                       </Link>
                       <button onClick={handleDelete.bind(this, dispositivo.idDispositivo)} className='btn-metodo'>

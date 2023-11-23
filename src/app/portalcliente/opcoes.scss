@@ -189,6 +189,9 @@ select {
     height: 45vh;
 }
 
+.atualizar-container .dados-atuais > h2{
+    margin-bottom: 1rem;
+}
 
 .atualizar-container .dados-atuais .icon-data {
     margin-bottom: 2rem;
@@ -204,7 +207,6 @@ select {
 }
 
 .atualizar-container .dados-atuais .dado-atual .dado {
-
 
     span {
         font-weight: bold;
