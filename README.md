@@ -17,6 +17,10 @@ O desenvolvimento do site da Inova-X Care empregou as seguintes tecnologias:
 
 Estas tecnologias foram escolhidas visando a eficiência no desenvolvimento, aprimorando a experiência do usuário e garantindo a segurança e confiabilidade do sistema.
 
+## Link do video
+O link, do video enviado na disciplina de Domain Driven Design, com software funcionando:
+https://www.youtube.com/watch?v=GRBNe07OxSo
+
 ## Intruções de Acesso
 ### Observação Geral
 Para efetuar o Login Bem-Sucedido, é necessário estar cadastrado no site.
