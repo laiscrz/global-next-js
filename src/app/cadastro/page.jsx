@@ -23,8 +23,13 @@ export default function Cadastro() {
             return;
         }
 
-        if (cliente.senha.length < 8) {
-            alert("A senha deve ter no mínimo 8 caracteres.");
+        if (cliente.senha.length !== 8) {
+            alert("A senha deve ser 8 caracteres.");
+            return;
+        }
+
+        if (cliente.idDispositivo.length !== 5) {
+            alert("O IdDispositivo deve conter exatamente 5 caracteres.");
             return;
         }
 

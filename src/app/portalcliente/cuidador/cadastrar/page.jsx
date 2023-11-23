@@ -34,8 +34,8 @@ export default function CadastrarCuidador() {
         e.preventDefault();
 
 
-        if (cuidador.telefone.length < 9) {
-            alert("O telefone do cuidador deve ter no máximo 9 dígitos. Ex. 912345678");
+        if (cuidador.telefone.length !== 9) {
+            alert("O telefone do cuidador deve ter 9 dígitos. Ex. 912345678");
             return;
         }
 

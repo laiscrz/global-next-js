@@ -24,17 +24,29 @@ Para efetuar o Login Bem-Sucedido, é necessário estar cadastrado no site.
 ### Cadastro
 Ao efetuar o cadastro do cliente, preenchendo todas as informações corretamente, o sistema gera um IdCliente aleatório. Em seguida, usando o método **POST**, os dados são armazenados no banco de dados por meio do backend Java. Posteriormente, essas informações são armazenadas no SessionStorage para serem utilizadas durante a sessão.
 
-*Vamos supor, que o João quer se cadastrar no site, e colocando as informações corretas, o Json ficaria:*
+*Um exemplo de Json, de um cliente ja cadastrado no Banco:*
 
 ``` bash
-    "idCliente": "P2RO5",
+    "idCliente": "ADMIN",
+    "nome": "ADMIN",
+    "genero": "outros",
+    "endereco": "Av G",
+    "cpf": "123.456.125-12",
+    "email": "admin@gmail.com",
+    "senha": "12345678",
+    "idDispositivo": "ADM01",
+```
+*Agora vamos supor, que o João quer se cadastrar no site, e colocando as informações corretas, o Json ficaria:*
+
+``` bash
+    "idCliente": "Gerado automaticamente ao completar formulario",
     "nome": "Joao",
     "genero": "masculino",
-    "endereco": "av paulista, n120",
-    "cpf": "545.459.125-12",
+    "endereco": "av paulista, n1110",
+    "cpf": "545.459.785-12",
     "email": "joao@gmail.com",
-    "senha": "joao123",
-    "idDispositivo": "XGY48",
+    "senha": "joao1234",
+    "idDispositivo": "ZS782",
 ```
 
 ### Login
@@ -42,7 +54,19 @@ Ao preencher as informações no formulário de login, o sistema realiza uma val
 No caso de um login bem-sucedido, o cliente encontrado é armazenado no SessionStorage, permitindo que as informações do cliente sejam utilizadas durante a sessão. Uma mensagem informando o sucesso no login é exibida, e o usuário é redirecionado para a página do portal do cliente ('/portalcliente').
 Em situações onde as credenciais não são válidas, uma mensagem de erro é exibida no formulário, indicando que o email e/ou a senha fornecidos são inválidos. Nesse caso, o usuário pode revisar as informações e tentar novamente ou optar por se cadastrar caso ainda não tenha uma conta.
 
+*Exemplo de login, ja cadastrado :*
+``` bash
+    "email": "admin@gmail.com",
+    "senha": "12345678",
+```
+
 *Vamos supor, que o João quer logar no site, sabendo que ele ja realizou o seu cadastro e colocando as informações corretas.*
+
+``` bash
+    "email": "joao@gmail.com",
+    "senha": "joao1234",
+```
+
 ***ETAPAS*** : *Ao inserir, o sistema faz um GET, para verificar se senha e email estão corretos, liberando assim o acesso, para o joão*
 
 ### Portal do Cliente
