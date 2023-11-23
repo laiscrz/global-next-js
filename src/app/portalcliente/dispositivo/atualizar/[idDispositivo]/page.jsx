@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
 import '/src/app/portalcliente/opcoes.scss'
-import { PiClipboardTextFill } from "react-icons/pi";
 import Link from "next/link";
 
 export default function AtualizarDispositivo({params}) {
@@ -75,7 +74,6 @@ export default function AtualizarDispositivo({params}) {
                             <p>{dadosAtuais.idDispositivo}</p>
                         </div>
                     </div>
-                    <PiClipboardTextFill className="icon-data" />
                     <Link href={'/portalcliente/cuidador'}>
                         <div className="container-btn">
                             <button className="btn-atualizar">Voltar para Página Anterior</button>
