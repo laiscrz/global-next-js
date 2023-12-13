@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório de desenvolvimento do site da Inova-X Care. Este projeto faz parte da Global Solution da NotreDame Intermedica, que foi entregue no 2° Semestres de 2023 do curso de ADS da Faculdade FIAP. Este é um projeto dedicado à saúde dos idosos, destacando o produto exclusivo da Inova-X Care chamado "Life Care".
 
-## Visão Geral
+## 🎯 Visão Geral
 
 O site visa proporcionar uma experiência informativa e interativa, oferecendo recursos que destacam os benefícios e características do "Life Care". Este produto foi desenvolvido pela Inova-X Care com o propósito de melhorar a qualidade de vida dos idosos, proporcionando soluções inovadoras para diversos aspectos de saúde e bem-estar.
 
@@ -17,15 +17,16 @@ O desenvolvimento do site da Inova-X Care empregou as seguintes tecnologias:
 
 Estas tecnologias foram escolhidas visando a eficiência no desenvolvimento, aprimorando a experiência do usuário e garantindo a segurança e confiabilidade do sistema.
 
-## Link do video
-O link, do video enviado na disciplina de Domain Driven Design, com software funcionando:
+## 🔗 Link do video
+* Segue o link do vídeo enviado na disciplina de Domain Driven Design, apresentando o software em funcionamento: 
 https://www.youtube.com/watch?v=GRBNe07OxSo
 
-## Intruções de Acesso
-### Observação Geral
+## 🔑 Intruções de Acesso
+### ⚠️ Observação Geral
 Para efetuar o Login Bem-Sucedido, é necessário estar cadastrado no site.
 
-### Cadastro
+### 📋 Cadastro
+##
 Ao efetuar o cadastro do cliente, preenchendo todas as informações corretamente, o sistema gera um IdCliente aleatório. Em seguida, usando o método **POST**, os dados são armazenados no banco de dados por meio do backend Java. Posteriormente, essas informações são armazenadas no SessionStorage para serem utilizadas durante a sessão.
 
 *Um exemplo de Json, de um cliente ja cadastrado no Banco:*
@@ -53,7 +54,8 @@ Ao efetuar o cadastro do cliente, preenchendo todas as informações corretament
     "idDispositivo": "ZS782",
 ```
 
-### Login
+### 📱 Login
+##
 Ao preencher as informações no formulário de login, o sistema realiza uma validação das credenciais fornecidas. Primeiramente, obtém a lista de clientes cadastrados no banco de dados por meio de uma requisição **GET**. Após obter a lista, verifica se existe um cliente com o email e senha fornecidos. Se as credenciais coincidirem com algum cliente da lista, o sistema considera o login como bem-sucedido.
 No caso de um login bem-sucedido, o cliente encontrado é armazenado no SessionStorage, permitindo que as informações do cliente sejam utilizadas durante a sessão. Uma mensagem informando o sucesso no login é exibida, e o usuário é redirecionado para a página do portal do cliente ('/portalcliente').
 Em situações onde as credenciais não são válidas, uma mensagem de erro é exibida no formulário, indicando que o email e/ou a senha fornecidos são inválidos. Nesse caso, o usuário pode revisar as informações e tentar novamente ou optar por se cadastrar caso ainda não tenha uma conta.
@@ -73,16 +75,17 @@ Em situações onde as credenciais não são válidas, uma mensagem de erro é e
 
 ***ETAPAS*** : *Ao inserir, o sistema faz um GET, para verificar se senha e email estão corretos, liberando assim o acesso, para o joão*
 
-### Portal do Cliente
+### 🤳🏻 Portal do Cliente
+##
 O Portal do Cliente é uma área personalizada onde os usuários cadastrados no sistema LifeCare podem acessar informações detalhadas sobre seus dispositivos e gerenciar diversas opções de maneira simples e intuitiva. Abaixo estão algumas das principais funcionalidades disponíveis no Portal do Cliente:
 
-#### Verificação de Login
+#### 🗳️ Verificação de Login
 Antes de acessar o Portal do Cliente, é feita uma verificação para garantir que o usuário esteja devidamente autenticado. Isso é realizado através da leitura das informações armazenadas no SessionStorage, que contêm os dados do cliente logado. Caso não haja um login válido, o usuário é redirecionado para a página de login ('/login').
 
-#### Boas-vindas
+#### 😃 Boas-vindas
 Ao acessar o Portal do Cliente, uma mensagem de boas-vindas é exibida, proporcionando uma experiência acolhedora e informativa. Uma imagem ilustrativa complementa essa mensagem, transmitindo uma atmosfera amigável e relacionada aos serviços LifeCare.
 
-#### Opções Disponíveis
+#### 🤝 Opções Disponíveis
 O Portal do Cliente oferece diversas opções, cada uma associada a uma funcionalidade específica. Abaixo estão algumas dessas opções:
 
 1. ***Cadastrar Dispositivo:*** Permite ao cliente cadastrar um novo dispositivo LifeCare. Usando metodo **POST**.
@@ -97,7 +100,8 @@ O Portal do Cliente oferece diversas opções, cada uma associada a uma funciona
 
 Cada opção é representada por um ícone intuitivo e acompanhada de um título e descrição que fornecem informações sobre sua finalidade.
 
-### Encerramento de Sessão
+### ⛔ Encerramento de Sessão
+##
 A opção "Sair" permite ao cliente encerrar a sessão no Portal do Cliente. Ao selecionar essa opção, o usuário é deslogado, as informações de login são removidas do SessionStorage e uma mensagem informa sobre o encerramento bem-sucedido da sessão.
 
 O Portal do Cliente visa proporcionar uma experiência completa e conveniente, concentrando todas as informações e funcionalidades relevantes em um ambiente online de fácil acesso e navegação.
