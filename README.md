@@ -17,9 +17,19 @@ O desenvolvimento do site da Inova-X Care empregou as seguintes tecnologias:
 
 Estas tecnologias foram escolhidas visando a eficiência no desenvolvimento, aprimorando a experiência do usuário e garantindo a segurança e confiabilidade do sistema.
 
-## 🔗 Link do video
-* Segue o link do vídeo enviado na disciplina de Domain Driven Design, apresentando o software em funcionamento: 
+## 📌 Link do Repositório do Back-End
+O código-fonte do backend está disponível no seguinte repositório:
+
+```bash
+https://github.com/laiscrz/global-java-backend
+```
+
+## 🔗 Link do Video
+Segue o link do vídeo enviado na disciplina de Domain Driven Design, apresentando o software em funcionamento:
+
+```bash
 https://www.youtube.com/watch?v=GRBNe07OxSo
+```
 
 ## 🔑 Intruções de Acesso
 ### ⚠️ Observação Geral
@@ -27,7 +37,7 @@ Para efetuar o Login Bem-Sucedido, é necessário estar cadastrado no site.
 
 ### 📋 Cadastro
 ##
-Ao efetuar o cadastro do cliente, preenchendo todas as informações corretamente, o sistema gera um IdCliente aleatório. Em seguida, usando o método **POST**, os dados são armazenados no banco de dados por meio do backend Java. Posteriormente, essas informações são armazenadas no SessionStorage para serem utilizadas durante a sessão.
+Ao efetuar o cadastro do cliente, preenchendo todas as informações corretamente, o sistema gera um IdCliente aleatório. Em seguida, usando o método `POST`, os dados são armazenados no banco de dados por meio do backend Java. Posteriormente, essas informações são armazenadas no SessionStorage para serem utilizadas durante a sessão.
 
 *Um exemplo de Json, de um cliente ja cadastrado no Banco:*
 
@@ -88,14 +98,14 @@ Ao acessar o Portal do Cliente, uma mensagem de boas-vindas é exibida, proporci
 #### 🤝 Opções Disponíveis
 O Portal do Cliente oferece diversas opções, cada uma associada a uma funcionalidade específica. Abaixo estão algumas dessas opções:
 
-1. ***Cadastrar Dispositivo:*** Permite ao cliente cadastrar um novo dispositivo LifeCare. Usando metodo **POST**.
-2. ***Visualizar Dispositivos:*** Exibe uma lista de todos os dispositivos LifeCare registrados. Usando metodos **GET, DELETE, PUT**.
-3. ***Cadastrar Cuidador:*** Possibilita o cadastro de um novo cuidador ou responsável. Usando metodos  **POST**.
-4. ***Informações do Cuidador:*** Oferece a visualização de informações sobre o cuidador associado à conta. Usando metodos **GET, DELETE, PUT**.
-5. ***Gerenciar Diagnósticos:*** Permite a visualização e gerenciamento de diagnósticos relacionados ao dispositivo. Usando metodos **GET, DELETE**
-6. ***Configurações de Conta:*** Facilita a atualização de informações de conta e preferências do cliente. Usando metodos **PUT**
-7. ***Histórico Serviços de Manutenção:*** Apresenta o histórico de serviços de manutenção realizados nos dispositivos. Usando metodos **GET, DELETE**
-8. ***Histórico de Serviços de Emergência:*** Mostra o histórico de serviços de emergência prestados. Usando metodos **GET, DELETE**
+1. ***Cadastrar Dispositivo:*** Permite ao cliente cadastrar um novo dispositivo LifeCare. Usando metodo `POST`.
+2. ***Visualizar Dispositivos:*** Exibe uma lista de todos os dispositivos LifeCare registrados. Usando metodos `GET, DELETE, PUT`.
+3. ***Cadastrar Cuidador:*** Possibilita o cadastro de um novo cuidador ou responsável. Usando metodos  `POST`.
+4. ***Informações do Cuidador:*** Oferece a visualização de informações sobre o cuidador associado à conta. Usando metodos `GET, DELETE, PUT`.
+5. ***Gerenciar Diagnósticos:*** Permite a visualização e gerenciamento de diagnósticos relacionados ao dispositivo. Usando metodos `GET, DELETE`.
+6. ***Configurações de Conta:*** Facilita a atualização de informações de conta e preferências do cliente. Usando metodos `PUT`
+7. ***Histórico Serviços de Manutenção:*** Apresenta o histórico de serviços de manutenção realizados nos dispositivos. Usando metodos `GET, DELETE`
+8. ***Histórico de Serviços de Emergência:*** Mostra o histórico de serviços de emergência prestados. Usando metodos `GET, DELETE`
 9. ***Sair:*** Permite encerrar a sessão no Portal do Cliente com segurança.
 
 Cada opção é representada por um ícone intuitivo e acompanhada de um título e descrição que fornecem informações sobre sua finalidade.
